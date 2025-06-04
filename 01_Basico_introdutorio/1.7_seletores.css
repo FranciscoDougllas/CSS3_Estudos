@@ -1,0 +1,109 @@
+/* Seletor de elemento (tag) */
+h1 {
+    color: #1976d2; /* Azul */
+}
+
+/* Seletor de classe */
+.destaque {
+    background: #fff9c4;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Seletor de ID */
+#especial {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+/* Seletor universal */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Seletor de atributo */
+a[target="_blank"] {
+    color: #388e3c;
+    text-decoration: underline;
+}
+
+/* Seletor de descendente */
+.container p {
+    margin-left: 20px;
+    color: #555;
+}
+
+/* Seletor de filho direto */
+ul > li {
+    font-weight: bold;
+}
+
+/* Seletor de irmão adjacente */
+h2 + p {
+    background: #e3f2fd;
+    padding: 8px;
+}
+
+/* Seletor de irmão geral */
+.primeiro ~ .outros {
+    color: #ff9800;
+}
+
+/* Seletor de pseudo-classe :hover */
+button:hover {
+    background: #1976d2;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Seletor de pseudo-classe :first-child */
+li:first-child {
+    border-left: 5px solid #1976d2;
+}
+
+/* Seletor de pseudo-classe :last-child */
+li:last-child {
+    border-right: 5px solid #d32f2f;
+}
+
+/* Seletor de pseudo-classe :nth-child */
+tr:nth-child(even) {
+    background: #f1f8e9;
+}
+
+/* Seletor de pseudo-elemento ::before */
+.destaque::before {
+    content: "★ ";
+    color: #fbc02d;
+}
+
+/* Seletor de pseudo-elemento ::after */
+.destaque::after {
+    content: " ✔";
+    color: #388e3c;
+}
+
+/* Seletor de múltiplos elementos */
+h2, h3 {
+    color: #0288d1;
+}
+
+/* Seletor de atributo começando com */
+input[type^="em"] {
+    border: 2px solid #1976d2;
+}
+
+/* Seletor de atributo terminando com */
+img[src$=".png"] {
+    border: 2px dashed #388e3c;
+}
+
+/* Seletor de atributo contendo */
+a[href*="google"] {
+    background: #e0e0e0;
+}
+
+/* Seletor negado :not */
+li:not(.especial) {
+    font-style: italic;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./1.8_style.css">
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="cor">
+                <h2>Programador</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque expedita voluptatum ut nisi, alias natus necessitatibus magni rem repellat ipsam.</p>
+            </li>
+            <li>
+                <h2>Doutor</h2>
+                <p>Eos, adipisci, voluptatum aut reiciendis culpa aliquid, atque facere quia repellendus suscipit animi expedita debitis ut quis sequi. Alias, doloribus.</p>
+            </li>
+            <li>
+                <h2>Advogado</h2>
+                <p>Ad quam quaerat voluptatem non ratione nihil sit eveniet mollitia, possimus voluptas, quis exercitationem autem tenetur enim nisi, itaque corrupti.</p>
+            </li>
+            <li>
+                <h2>Cirugiao</h2>
+                <p>Beatae voluptatibus eum quam et provident suscipit libero eveniet, excepturi aut reprehenderit delectus assumenda esse, sint harum odit vitae ducimus!</p>
+            </li>
+            <li>
+                <h2>Mecanico</h2>
+                <p>Inventore nihil maiores nostrum perspiciatis distinctio praesentium quia fugiat, perferendis aliquam deserunt unde, doloremque facilis delectus soluta animi eius possimus!</p>
+            </li>
+            <li>
+                <h2>Dentista</h2>
+                <p>Porro, quisquam. Facere, non odio magnam atque rerum laborum eligendi velit distinctio sapiente unde consequuntur nisi doloribus odit libero quidem.</p>
+            </li>
+            <li>
+                <h2>Agricultor</h2>
+                <p>Quisquam nemo non repudiandae optio rem nesciunt at cum explicabo error! Non, laboriosam? Quam atque quibusdam rerum placeat esse excepturi.</p>
+            </li>
+            <li>
+                <h2>Noivo</h2>
+                <p>Magni nihil eaque laudantium consequuntur! Molestias eaque illum facilis dolor voluptatem ab aspernatur dolores, quaerat eius non laudantium ex inventore?</p>
+            </li>
+            <li class="oculto">
+                <h2>Oculto</h2>
+                <p>Veritatis, maiores! Nostrum sunt, distinctio accusantium consectetur laboriosam deleniti impedit modi totam. Cumque similique dolor inventore. Perferendis doloribus unde saepe.</p>
+            </li>
+            <li>
+                <h2>Extra</h2>
+                <p>Aperiam explicabo debitis iste accusamus qui necessitatibus cumque totam sapiente cupiditate, dignissimos architecto et omnis ut officia doloribus, ex quos!</p>
+            </li>
+        </ul>
+        <button class="btn">Mostra</button>
+    </div>
+
+    <script>
+        const mostra = document.querySelector(".oculto");
+        const btn = document.querySelector(".btn")
+
+        btn.addEventListener("click", (e) => {
+            e.preventDefault()
+            mostra.style.display = "block";
+        })
+    </script>
+</body>
+</html>

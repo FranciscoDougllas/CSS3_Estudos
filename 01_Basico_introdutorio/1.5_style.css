@@ -1,0 +1,35 @@
+.box-model-completo {
+    margin: 40px auto;
+    width: 350px;
+    text-align: center;
+}
+.box-margin {
+    background: #e0e0e0;
+    padding: 20px;
+}
+.box-border {
+    border: 5px solid #ff9800;
+    padding: 15px;
+    background: #fff3e0;
+}
+.box-padding {
+    background: #bbdefb;
+    padding: 20px;
+}
+.box-content {
+    background: #fff;
+    padding: 10px;
+    color: #333;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #ccc;
+}
+.box-legenda {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.95em;
+}
+.legenda-margin { color: #757575; }
+.legenda-border { color: #ff9800; }
+.legenda-padding { color: #1976d2; }
+.legenda-content { color: #333; }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Display no CSS3</title>
+
+    <link rel="stylesheet" href="./1.6_display.css">
+</head>
+<body>
+    <h1>Tipos de Display no CSS3</h1>
+    <p>O <b>display</b> é uma das propriedades mais importantes do CSS, pois define como um elemento será exibido na página. Abaixo estão os principais tipos de display e exemplos de utilização:</p>
+
+    <h2>1. <code>display: block</code></h2>
+    <p>Elementos de bloco ocupam toda a largura disponível e começam em uma nova linha.</p>
+    <div class="exemplo">
+        <div class="exemplo-block">Elemento 1 (block)</div>
+        <div class="exemplo-block">Elemento 2 (block)</div>
+    </div>
+    <pre>
+        .exemplo-block {
+            display: block;
+        }
+        </pre>
+
+    <h2>2. <code>display: inline</code></h2>
+    <p>Elementos inline ocupam apenas o espaço necessário e não iniciam uma nova linha.</p>
+    <div class="exemplo">
+        <span class="exemplo-inline">Inline 1</span>
+        <span class="exemplo-inline">Inline 2</span>
+        <span class="exemplo-inline">Inline 3</span>
+    </div>
+    <pre>
+        .exemplo-inline {
+            display: inline;
+        }
+        </pre>
+
+    <h2>3. <code>display: inline-block</code></h2>
+    <p>Combina características dos dois anteriores: fica na mesma linha, mas aceita largura e altura.</p>
+    <div class="exemplo">
+        <span class="exemplo-inlineblock">Inline-block 1</span>
+        <span class="exemplo-inlineblock">Inline-block 2</span>
+        <span class="exemplo-inlineblock">Inline-block 3</span>
+    </div>
+    <pre>
+        .exemplo-inlineblock {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+        }
+        </pre>
+
+    <h2>4. <code>display: flex</code></h2>
+    <p>Permite criar layouts flexíveis e responsivos facilmente.</p>
+    <div class="exemplo exemplo-flex">
+        <div>Flex 1</div>
+        <div>Flex 2</div>
+        <div>Flex 3</div>
+    </div>
+    <pre>
+        .exemplo-flex {
+            display: flex;
+            gap: 10px;
+        }
+        </pre>
+
+    <h2>5. <code>display: none</code></h2>
+    <p>Remove o elemento da renderização da página (ele não ocupa espaço).</p>
+    <pre>
+        .oculto {
+            display: none;
+        }
+    </pre>
+    <p><b>Exemplo:</b> O elemento abaixo está oculto e não aparece na página.</p>
+    <!-- <div class="oculto">Você não verá este texto.</div> -->
+
+    <h2>Resumo dos principais valores de display:</h2>
+    <ul>
+        <li><b>block</b>: Ocupa toda a largura, inicia em nova linha (ex: &lt;div&gt;, &lt;h1&gt;)</li>
+        <li><b>inline</b>: Ocupa apenas o necessário, não quebra linha (ex: &lt;span&gt;, &lt;a&gt;)</li>
+        <li><b>inline-block</b>: Fica em linha, mas aceita largura/altura</li>
+        <li><b>flex</b>: Layout flexível para elementos filhos</li>
+        <li><b>none</b>: Elemento não é exibido</li>
+    </ul>
+</body>
+</html>

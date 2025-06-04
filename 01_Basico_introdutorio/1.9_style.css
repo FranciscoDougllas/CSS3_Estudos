@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão da página */
+    background: #f5f5f5;
+    margin: 40px;
+    color: #222;
+}
+h1 {
+    font-family: 'Georgia', serif; /* Fonte diferente para o título */
+    font-size: 2.5em; /* Tamanho maior */
+    color: #2a4d69; /* Cor personalizada */
+    text-align: center; /* Centraliza o texto */
+    text-transform: uppercase; /* Deixa tudo maiúsculo */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
+h2 {
+    font-size: 1.5em;
+    color: #4b86b4;
+    margin-top: 30px;
+    text-decoration: underline; /* Sublinha o texto */
+}
+p {
+    font-size: 1.1em;
+    line-height: 1.6; /* Espaçamento entre linhas */
+    text-align: justify; /* Justifica o texto */
+}
+.destaque {
+    font-weight: bold; /* Negrito */
+    color: #e94e77; /* Cor de destaque */
+    background: #fff0f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.italico {
+    font-style: italic; /* Itálico */
+}
+.sombra {
+    text-shadow: 2px 2px 5px #aaa; /* Sombra no texto */
+}
+.maiusculo {
+    text-transform: uppercase; /* Transforma em maiúsculo */
+}
+.centralizado {
+    text-align: center; /* Centraliza o texto */
+}
+.espacamento {
+    letter-spacing: 4px; /* Espaçamento entre letras */
+    word-spacing: 10px; /* Espaçamento entre palavras */
+}

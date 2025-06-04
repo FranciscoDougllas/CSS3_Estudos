@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação: Box Model, Margin e Padding</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; background: #f9f9f9; }
+        h1, h2, h3 { color: #1976d2; }
+        .exemplo-boxmodel {
+            margin: 40px auto;
+            width: 350px;
+            text-align: center;
+        }
+        .exemplo-margin {
+            background: #e0e0e0;
+            padding: 20px;
+        }
+        .exemplo-border {
+            border: 5px solid #ff9800;
+            padding: 15px;
+            background: #fff3e0;
+        }
+        .exemplo-padding {
+            background: #bbdefb;
+            padding: 20px;
+        }
+        .exemplo-content {
+            background: #fff;
+            padding: 10px;
+            color: #333;
+            border-radius: 4px;
+            box-shadow: 1px 1px 4px #ccc;
+        }
+        .legenda {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 0.95em;
+        }
+        .legenda-margin { color: #757575; }
+        .legenda-border { color: #ff9800; }
+        .legenda-padding { color: #1976d2; }
+        .legenda-content { color: #333; }
+        pre { background: #222; color: #fff; padding: 15px; border-radius: 6px; overflow-x: auto; }
+        ul { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Documentação: Box Model, Margin e Padding</h1>
+    <p>O <b>Box Model</b> é um conceito fundamental do CSS que define como os elementos são renderizados na página. Cada elemento é representado como uma caixa retangular composta por quatro áreas principais:</p>
+    <ul>
+        <li><b>Content</b> (Conteúdo): onde fica o texto ou outros elementos filhos.</li>
+        <li><b>Padding</b>: espaço interno entre o conteúdo e a borda.</li>
+        <li><b>Border</b>: a borda ao redor do padding e do conteúdo.</li>
+        <li><b>Margin</b>: espaço externo entre a borda do elemento e outros elementos.</li>
+    </ul>
+
+    <h2>Exemplo Visual do Box Model</h2>
+    <div class="exemplo-boxmodel">
+        <div class="exemplo-margin">
+            Margin
+            <div class="exemplo-border">
+                Border
+                <div class="exemplo-padding">
+                    Padding
+                    <div class="exemplo-content">
+                        Content<br>
+                        <small>(Conteúdo do elemento)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="legenda">
+            <span class="legenda-margin">Margin</span>
+            <span class="legenda-border">Border</span>
+            <span class="legenda-padding">Padding</span>
+            <span class="legenda-content">Content</span>
+        </div>
+    </div>
+
+    <h2>Exemplo de Código</h2>
+    <pre><code>&lt;div class="exemplo"&gt;Conteúdo&lt;/div&gt;
+
+.exemplo {
+    margin: 20px;
+    border: 3px solid #1976d2;
+    padding: 15px;
+    background: #e3f2fd;
+}</code></pre>
+
+    <h2>Explicação das Propriedades</h2>
+    <ul>
+        <li><b>margin</b>: Define o espaço externo do elemento. Pode ser individual (margin-top, margin-right, etc) ou abreviado.</li>
+        <li><b>border</b>: Define a borda do elemento. Pode configurar largura, cor e estilo.</li>
+        <li><b>padding</b>: Define o espaço interno entre o conteúdo e a borda.</li>
+        <li><b>background</b>: Define a cor ou imagem de fundo do conteúdo e do padding.</li>
+    </ul>
+
+    <h2>Dicas</h2>
+    <ul>
+        <li>O <b>padding</b> e o <b>border</b> aumentam o tamanho total do elemento, a menos que você use <code>box-sizing: border-box;</code>.</li>
+        <li>O <b>margin</b> não afeta o tamanho do elemento, apenas o espaçamento externo.</li>
+        <li>Você pode inspecionar o Box Model de qualquer elemento usando as ferramentas de desenvolvedor do navegador.</li>
+    </ul>
+</body>
+</html> 

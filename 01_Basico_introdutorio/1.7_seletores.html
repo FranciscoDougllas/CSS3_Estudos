@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS3 - Exemplos Práticos</title>
+    <link rel="stylesheet" href="./1.7_seletores.css">
+</head>
+<body>
+    <h1>Exemplos de Seletores CSS3</h1>
+    <p>Este documento demonstra os principais seletores do CSS3 com exemplos práticos e comentários.</p>
+
+    <!-- Seletor de classe e ID -->
+    <p class="destaque">Este parágrafo usa o <b>seletor de classe</b> <code>.destaque</code> e pseudo-elementos.</p>
+    <p id="especial">Este parágrafo usa o <b>seletor de ID</b> <code>#especial</code>.</p>
+
+    <!-- Seletor de atributo -->
+    <a href="https://www.google.com" target="_blank">Link para o Google (target="_blank")</a><br>
+    <a href="https://www.exemplo.com" target="_self">Link para Exemplo (target="_self")</a>
+
+    <!-- Seletor de descendente e filho direto -->
+    <div class="container">
+        <h2>Lista de Itens</h2>
+        <ul>
+            <li>Primeiro item (filho direto, <code>:first-child</code>)</li>
+            <li class="especial">Segundo item (classe e <code>:not</code>)</li>
+            <li>Terceiro item (filho direto)</li>
+            <li>Quarto item (filho direto, <code>:last-child</code>)</li>
+        </ul>
+        <p>Este parágrafo é descendente de <code>.container</code>.</p>
+    </div>
+
+    <!-- Seletor de irmão adjacente e geral -->
+    <h2>Seletor de Irmão</h2>
+    <p>Este parágrafo é irmão adjacente de <code>h2</code>.</p>
+    <div>
+        <span class="primeiro">Primeiro</span>
+        <span class="outros">Irmão 1</span>
+        <span class="outros">Irmão 2</span>
+    </div>
+
+    <!-- Seletor de pseudo-classe :hover -->
+    <h3>Botão com :hover</h3>
+    <button>Passe o mouse aqui</button>
+
+    <!-- Seletor de pseudo-classe :nth-child -->
+    <h3>Tabela com :nth-child</h3>
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>28</td>
+        </tr>
+    </table>
+
+    <!-- Seletor de atributo começando, terminando e contendo -->
+    <h3>Inputs e Imagens</h3>
+    <input type="email" placeholder="Digite seu email">
+    <input type="text" placeholder="Outro campo">
+    <br>
+    <img src="imagem.png" alt="Imagem PNG" width="80">
+    <img src="foto.jpg" alt="Imagem JPG" width="80">
+
+    <!-- Seletor de múltiplos elementos -->
+    <h3>Seletor de múltiplos elementos</h3>
+    <p>Este parágrafo não é afetado pelo seletor múltiplo, mas o título acima sim.</p>
+
+    <!-- Seletor negado :not -->
+    <ul>
+        <li>Item comum</li>
+        <li class="especial">Item especial</li>
+        <li>Outro item comum</li>
+    </ul>
+
+    <!-- Comentários explicativos em HTML e CSS estão presentes ao longo do código -->
+</body>
+</html>
