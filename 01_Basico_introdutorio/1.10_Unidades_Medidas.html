@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida em CSS - Exemplos Práticos</title>
+    <!--
+        Este documento apresenta exemplos práticos e explicações sobre as principais unidades de medida em CSS,
+        separando entre Unidades Absolutas e Unidades Relativas.
+        Cada exemplo é acompanhado de comentários detalhados em HTML e CSS.
+    -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0 0 40px 0;
+        }
+        main {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 32px 24px 24px 24px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 36px;
+        }
+        .exemplo {
+            margin-bottom: 18px;
+        }
+        .label {
+            font-weight: bold;
+            margin-bottom: 4px;
+            color: #444;
+        }
+        /* ===================== */
+        /* Unidades Absolutas    */
+        /* ===================== */
+        .caixa-px {
+            width: 180px; /* largura fixa em pixels */
+            height: 50px;
+            background: #1976d2;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            font-size: 1rem;
+        }
+        /* ===================== */
+        /* Unidades Relativas    */
+        /* ===================== */
+        html {
+            font-size: 16px; /* 1rem = 16px */
+        }
+        .caixa-em {
+            font-size: 1.3em; /* 1.3x o tamanho da fonte do pai */
+            width: 12em;
+            height: 2.5em;
+            background: #388e3c;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            margin-bottom: 6px;
+        }
+        .caixa-rem {
+            font-size: 1.1rem; /* 1.1x o tamanho da fonte raiz (html) */
+            width: 16rem;
+            height: 2.5rem;
+            background: #fbc02d;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            margin-bottom: 6px;
+        }
+        .container-pct {
+            width: 80%;
+            margin: 0 auto 12px auto;
+            background: #e1bee7;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .caixa-pct {
+            width: 60%; /* 60% da largura do container */
+            height: 40px;
+            background: #8e24aa;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            margin-bottom: 6px;
+        }
+        .caixa-vwvh {
+            width: 40vw; /* 40% da largura da tela */
+            height: 8vh; /* 8% da altura da tela */
+            background: #d81b60;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            margin-bottom: 6px;
+        }
+        /* Responsividade para telas pequenas */
+        @media (max-width: 600px) {
+            main {
+                padding: 12px 2vw;
+            }
+            .caixa-px, .caixa-em, .caixa-rem, .caixa-pct, .caixa-vwvh {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Unidades de Medida em CSS</h1>
+        <p><!--
+            Unidades de medida são essenciais para definir tamanhos, espaçamentos e proporções em CSS.
+            Elas podem ser absolutas (fixas) ou relativas (dependem do contexto ou da tela).
+        --></p>
+
+        <!-- ===================== -->
+        <!-- Unidades Absolutas    -->
+        <!-- ===================== -->
+        <section>
+            <h2>Unidades Absolutas</h2>
+            <div class="exemplo">
+                <div class="label">px (pixel)</div>
+                <!-- px é uma unidade fixa, não depende do contexto -->
+                <div class="caixa-px">Largura: 180px</div>
+            </div>
+        </section>
+
+        <!-- ===================== -->
+        <!-- Unidades Relativas    -->
+        <!-- ===================== -->
+        <section>
+            <h2>Unidades Relativas</h2>
+            <div class="exemplo">
+                <div class="label">em (relativo ao elemento pai)</div>
+                <!-- em é relativo ao tamanho da fonte do elemento pai -->
+                <div class="caixa-em">Largura: 12em</div>
+            </div>
+            <div class="exemplo">
+                <div class="label">rem (relativo ao elemento raiz)</div>
+                <!-- rem é relativo ao tamanho da fonte do elemento raiz (html) -->
+                <div class="caixa-rem">Largura: 16rem</div>
+            </div>
+            <div class="exemplo">
+                <div class="label">% (percentual do elemento pai)</div>
+                <!-- % é sempre relativo ao elemento pai -->
+                <div class="container-pct">
+                    <div class="caixa-pct">Largura: 60%</div>
+                </div>
+            </div>
+            <div class="exemplo">
+                <div class="label">vw/vh (viewport width/height)</div>
+                <!-- vw e vh são relativos ao tamanho da tela (viewport) -->
+                <div class="caixa-vwvh">Largura: 40vw | Altura: 8vh</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Resumo</h2>
+            <ul>
+                <li><b>px</b>: tamanho fixo, não responsivo (absoluto)</li>
+                <li><b>em</b>: relativo ao tamanho da fonte do elemento pai (relativo)</li>
+                <li><b>rem</b>: relativo ao tamanho da fonte raiz (html) (relativo)</li>
+                <li><b>%</b>: relativo ao elemento pai, útil para layouts fluidos (relativo)</li>
+                <li><b>vw/vh</b>: relativo ao tamanho da tela, ótimo para responsividade (relativo)</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
