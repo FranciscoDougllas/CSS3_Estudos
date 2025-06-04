@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2px;
+    background-image: url("../images/794.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2px;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(89, 113, 92, 0.566);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    gap: 20px;
+    text-align: center;
+}
+
+.container{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: rgba(0, 0, 255, 0.404);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn{
+    background: rgba(204, 255, 0, 0.799);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.btn:hover{
+    background: rgba(60, 190, 204, 0.799);
+    transform: scale(1.05);
+}
+
+form{
+    width: 500px;
+    background: #cccccc85;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}

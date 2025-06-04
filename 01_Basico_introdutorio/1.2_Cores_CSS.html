@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./1.2_Cores.css">
+</head>
+<body>
+    <h1>Cores no CSS</h1>
+
+    <p>Existem por padrao basico 3 formas de definir cores no CSS:</p>
+    <ul>
+        <li>Nome da cor</li>
+        <li>Hexadecimal</li>
+        <li>RGB</li>
+    </ul>       
+    <!-- Exemplos de como adicionar cores ao HTML usando CSS -->
+
+    <h2>Exemplo 1: Cor usando o atributo style (inline)</h2>
+    <p style="color: blue;">Este parágrafo usa cor azul definida diretamente no atributo style.</p>
+    <p style="background-color: yellow; color: green;">Este parágrafo tem fundo amarelo e texto verde usando CSS inline.</p>
+
+    <h2>Exemplo 2: Cor usando a tag &lt;style&gt; (CSS interno)</h2>
+    <style>
+        .interno-vermelho {
+            color: red;
+        }
+        .interno-fundo {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+    </style>
+    <p class="interno-vermelho">Este parágrafo usa cor vermelha definida no CSS interno.</p>
+    <p class="interno-fundo">Este parágrafo tem fundo cinza claro e texto escuro usando CSS interno.</p>
+
+    <h2>Exemplo 3: Cor usando arquivo CSS externo</h2>
+    <p class="externo-exemplo">Este parágrafo terá a cor definida no arquivo CSS externo (veja 1.2_Cores.css).</p>
+
+    <h2>Exemplo 4: Outras formas de definir cores</h2>
+    <ul>
+        <li style="color: orange;">Cor pelo nome: orange</li>
+        <li style="color: #00bfff;">Cor hexadecimal: #00bfff</li>
+        <li style="color: rgb(128, 0, 128);">Cor RGB: rgb(128, 0, 128)</li>
+        <li style="color: rgba(255, 0, 0, 0.5);">Cor RGBA (transparente): rgba(255, 0, 0, 0.5)</li>
+        <li style="color: hsl(120, 100%, 25%);">Cor HSL: hsl(120, 100%, 25%)</li>
+        <li style="color: hsla(240, 100%, 50%, 0.3);">Cor HSLA (transparente): hsla(240, 100%, 50%, 0.3)</li>
+    </ul>
+
+    <h2>Exemplo 5: Cor em outros elementos</h2>
+    <button style="background-color: #4caf50; color: white;">Botão com cor de fundo verde</button>
+    <input type="text" style="border: 2px solid #ff9800; color: #ff9800;" value="Input com borda e texto laranja">
+    <div style="width: 100px; height: 100px; background: linear-gradient(45deg, red, yellow); margin-top: 10px;">
+        Div com gradiente linear de vermelho para amarelo
+    </div>
+
+    <h2>Nome da cor</h2>
+    <p>O nome da cor é uma palavra reservada no CSS, como por exemplo: red, blue, green, etc.</p>
+    <p>Exemplo:
+        <div class="nome-cor">
+            <p>Este é um parágrafo com a cor vermelha.</p>
+        </div>
+    </p>
+
+    <h2>Hexadecimal</h2>
+    <p>O hexadecimal é uma representação de cores em hexadecimal, como por exemplo: #000000, #ffffff, #ff0000, etc.</p>
+    <p>Exemplo:
+        <div class="hexadecimal">
+            <p>Este é um parágrafo com a cor vermelha.</p>
+        </div>
+    </p>
+
+    <h2>RGB</h2>
+    <p>O RGB é uma representação de cores em RGB, como por exemplo: rgb(0, 0, 0), rgb(255, 255, 255), rgb(255, 0, 0), etc.</p>
+    <p>Exemplo:
+        <div class="rgb">
+            <p>Este é um parágrafo com a cor vermelha.</p>
+        </div>
+    </p>
+</body>
+</html>
