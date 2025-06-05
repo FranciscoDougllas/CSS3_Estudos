@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de Hierarquia</title>
+    <!-- Exemplo de seletores de hierarquia em CSS -->
+    <link rel="stylesheet" href="./1.13b_SeletoresHierarquia.css">
+</head>
+<body>
+    <h1>Seletores de Hierarquia</h1>
+    <!-- Seletor descendente: seleciona todos os <span> dentro de <div> -->
+    <div>
+        <span>Span dentro do div</span>
+        <p>Parágrafo <span>Span dentro do parágrafo</span></p>
+    </div>
+    <span>Span fora do div</span>
+    <br><br>
+    <!-- Seletor filho: seleciona apenas <li> filhos diretos de <ul> -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Subitem</li>
+            </ul>
+        </li>
+    </ul>
+    <br><br>
+    <!-- Seletor irmão adjacente: seleciona o <p> que vem imediatamente após <h2> -->
+    <h2>Título</h2>
+    <p>Parágrafo após o título</p>
+    <p>Outro parágrafo</p>
+    <br><br>
+    <!-- Seletor irmão geral: seleciona todos os <p> após <h3> -->
+    <h3>Outro Título</h3>
+    <p>Primeiro parágrafo após h3</p>
+    <p>Segundo parágrafo após h3</p>
+</body>
+</html> 

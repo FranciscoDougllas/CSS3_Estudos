@@ -1,0 +1,22 @@
+/* Seletor de elemento - menor especificidade */
+h1 {
+    color: blue; /* Comentário: Todos os h1 ficarão azuis, a menos que outra regra mais específica exista */
+}
+
+/* Seletor de classe - especificidade intermediária */
+.destaque {
+    color: green; /* Comentário: Todos os elementos com a classe "destaque" ficarão verdes, a menos que outra regra mais específica exista */
+}
+
+/* Seletor de ID - alta especificidade */
+#titulo {
+    color: red; /* Comentário: O elemento com id="titulo" ficará vermelho, pois o ID tem maior especificidade */
+}
+
+/* Estilo inline (no HTML) - especificidade ainda maior */
+/* Exemplo: <h1 id="titulo" class="destaque" style="color: orange;">Especificidade em CSS</h1> */
+
+/* !important - sobrescreve quase tudo */
+h1 {
+    color: purple !important; /* Comentário: Todos os h1 ficarão roxos, mesmo que outras regras sejam mais específicas */
+}

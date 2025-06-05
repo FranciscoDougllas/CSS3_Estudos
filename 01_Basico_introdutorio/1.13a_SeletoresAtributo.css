@@ -1,0 +1,18 @@
+/* Seleciona todos os inputs do tipo texto */
+input[type="text"] {
+    border: 2px solid blue;
+    /* Todos os inputs do tipo texto terão borda azul */
+}
+
+/* Seleciona todos os links que começam com https */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+    /* Links que começam com https ficam verdes e em negrito */
+}
+
+/* Seleciona todos os inputs cujo placeholder termina com 'a' */
+input[placeholder$="a"] {
+    background: #ffe4e1;
+    /* Inputs cujo placeholder termina com 'a' terão fundo rosa claro */
+} 

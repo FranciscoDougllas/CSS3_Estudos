@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Avançados em CSS</title>
+    <!-- Exemplos de seletores avançados em CSS -->
+    <link rel="stylesheet" href="./1.13_SeletoresAvancados.css">
+</head>
+<body>
+    <h1>Seletores Avançados em CSS</h1>
+
+    <!-- ================= SELETORES DE ATRIBUTO ================= -->
+    <h2>Seletores de Atributo</h2>
+    <!-- O seletor [type="text"] seleciona todos os inputs do tipo texto -->
+    <input type="text" placeholder="Texto">
+    <input type="password" placeholder="Senha">
+    <input type="email" placeholder="Email">
+    <br><br>
+    <!-- O seletor [href^="https"] seleciona todos os links que começam com https -->
+    <a href="https://www.google.com">Google</a>
+    <a href="http://www.exemplo.com">Exemplo</a>
+    <a href="https://www.openai.com">OpenAI</a>
+    <br><br>
+    <!-- O seletor [placeholder$="a"] seleciona todos os inputs cujo placeholder termina com 'a' -->
+    <input type="text" placeholder="Senha">
+    <input type="text" placeholder="Palavra">
+
+    <!-- ================= SELETORES DE HIERARQUIA ================= -->
+    <h2>Seletores de Hierarquia</h2>
+    <!-- Seletor descendente: seleciona todos os <span> dentro de <div> -->
+    <div>
+        <span>Span dentro do div</span>
+        <p>Parágrafo <span>Span dentro do parágrafo</span></p>
+    </div>
+    <span>Span fora do div</span>
+    <br><br>
+    <!-- Seletor filho: seleciona apenas <li> filhos diretos de <ul> -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2
+            <ul>
+                <li>Subitem</li>
+            </ul>
+        </li>
+    </ul>
+    <br><br>
+    <!-- Seletor irmão adjacente: seleciona o <p> que vem imediatamente após <h2> -->
+    <h3>Exemplo de h2 + p</h3>
+    <h2>Título</h2>
+    <p>Parágrafo após o título</p>
+    <p>Outro parágrafo</p>
+    <br><br>
+    <!-- Seletor irmão geral: seleciona todos os <p> após <h3> -->
+    <h3>Outro Título</h3>
+    <p>Primeiro parágrafo após h3</p>
+    <p>Segundo parágrafo após h3</p>
+
+    <!-- ================= PSEUDO-CLASSES ================= -->
+    <h2>Pseudo-classes</h2>
+    <!-- :hover, :focus, :active -->
+    <button>Botão</button>
+    <input type="text" placeholder="Passe o mouse ou foque aqui">
+    <br><br>
+    <!-- :first-child, :last-child, :nth-child, :not -->
+    <ul>
+        <li>Primeiro</li>
+        <li>Segundo</li>
+        <li>Terceiro</li>
+        <li>Quarto</li>
+    </ul>
+    <br><br>
+    <!-- :not() para excluir elementos -->
+    <p>Parágrafo normal</p>
+    <p class="destaque">Parágrafo destacado</p>
+
+    <!-- ================= PSEUDO-ELEMENTOS ================= -->
+    <h2>Pseudo-elementos</h2>
+    <!-- ::first-line e ::first-letter -->
+    <p class="exemplo1">Esta frase demonstra o uso de <b>::first-line</b> e <b>::first-letter</b> em CSS.</p>
+    <br>
+    <!-- ::before e ::after -->
+    <p class="exemplo2">Texto com ::before e ::after</p>
+    <br>
+    <!-- ::selection -->
+    <p class="exemplo3">Selecione parte deste texto para ver o efeito de ::selection.</p>
+
+    <!-- ================= SELETORES COMBINADOS ================= -->
+    <h2>Seletores Combinados</h2>
+    <!-- Seletores de classe e atributo juntos -->
+    <input type="text" class="importante" placeholder="Importante">
+    <input type="text" placeholder="Normal">
+    <br><br>
+    <!-- Seletores de tag, classe e pseudo-classe juntos -->
+    <button class="destaque">Clique aqui</button>
+    <button>Clique aqui também</button>
+    <br><br>
+    <!-- Seletores múltiplos -->
+    <p class="aviso">Aviso!</p>
+    <span class="aviso">Atenção!</span>
+</body>
+</html>

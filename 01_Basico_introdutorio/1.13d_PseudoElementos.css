@@ -1,0 +1,30 @@
+/* ::first-line e ::first-letter */
+.exemplo1::first-line {
+    color: purple;
+    font-weight: bold;
+    /* Primeira linha do parágrafo fica roxa e em negrito */
+}
+.exemplo1::first-letter {
+    font-size: 2em;
+    color: orange;
+    /* Primeira letra do parágrafo fica maior e laranja */
+}
+
+/* ::before e ::after */
+.exemplo2::before {
+    content: "→ ";
+    color: green;
+    /* Adiciona uma seta verde antes do texto */
+}
+.exemplo2::after {
+    content: " ←";
+    color: red;
+    /* Adiciona uma seta vermelha após o texto */
+}
+
+/* ::selection */
+.exemplo3::selection {
+    background: yellow;
+    color: black;
+    /* Ao selecionar o texto, o fundo fica amarelo e o texto preto */
+} 

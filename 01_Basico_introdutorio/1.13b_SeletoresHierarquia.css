@@ -1,0 +1,24 @@
+/* Seletor descendente: todos os <span> dentro de <div> */
+div span {
+    color: blue;
+    /* Todos os spans dentro de div ficam azuis */
+}
+
+/* Seletor filho: apenas <li> filhos diretos de <ul> */
+ul > li {
+    font-weight: bold;
+    /* Apenas os itens de lista filhos diretos de ul ficam em negrito */
+}
+
+/* Seletor irmão adjacente: <p> imediatamente após <h2> */
+h2 + p {
+    background: #e0ffe0;
+    /* O parágrafo imediatamente após h2 terá fundo verde claro */
+}
+
+/* Seletor irmão geral: todos os <p> após <h3> */
+h3 ~ p {
+    border-left: 4px solid orange;
+    padding-left: 8px;
+    /* Todos os parágrafos após h3 terão uma borda laranja à esquerda */
+} 

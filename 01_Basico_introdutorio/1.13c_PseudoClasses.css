@@ -1,0 +1,33 @@
+/* :hover, :focus, :active */
+button:hover {
+    background: #add8e6;
+    /* Botão fica azul claro ao passar o mouse */
+}
+button:active {
+    background: #87ceeb;
+    /* Botão fica azul mais escuro ao clicar */
+}
+input:focus {
+    border: 2px solid green;
+    /* Input fica com borda verde ao receber foco */
+}
+
+/* :first-child, :last-child, :nth-child */
+ul li:first-child {
+    color: red;
+    /* Primeiro item da lista fica vermelho */
+}
+ul li:last-child {
+    color: blue;
+    /* Último item da lista fica azul */
+}
+ul li:nth-child(2) {
+    background: #ffffe0;
+    /* Segundo item da lista com fundo amarelo claro */
+}
+
+/* :not() para excluir elementos */
+p:not(.destaque) {
+    font-style: italic;
+    /* Parágrafos que não têm a classe 'destaque' ficam em itálico */
+} 
