@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Variáveis em CSS</title>
+    <style>
+        /*
+            Exemplo de utilização de variáveis em CSS (Custom Properties)
+            As variáveis são declaradas dentro de um seletor, geralmente :root para ficarem globais.
+        */
+        :root {
+            --cor-primaria: #3498db;
+            --cor-secundaria: #2ecc71;
+            --tamanho-fonte: 18px;
+            --espacamento: 16px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-secundaria);
+            color: #fff;
+            margin: 0;
+            padding: var(--espacamento);
+        }
+
+        h1 {
+            color: var(--cor-primaria);
+            font-size: calc(var(--tamanho-fonte) * 2);
+        }
+
+        p {
+            font-size: var(--tamanho-fonte);
+            margin-bottom: var(--espacamento);
+        }
+
+        .botao {
+            background-color: var(--cor-primaria);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: var(--tamanho-fonte);
+            transition: background 0.3s;
+        }
+        .botao:hover {
+            background-color: var(--cor-secundaria);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Variáveis em CSS</h1>
+    <p>
+        As variáveis em CSS permitem definir valores reutilizáveis para propriedades, facilitando a manutenção e a consistência do design.<br>
+        No exemplo abaixo, altere o valor das variáveis em <code>:root</code> para ver o efeito em todo o site.
+    </p>
+    <button class="botao">Botão de Exemplo</button>
+    <hr>
+    <h2>Como funciona?</h2>
+    <ol>
+        <li>As variáveis são declaradas usando <code>--nome-da-variavel: valor;</code> dentro de um seletor.</li>
+        <li>Para usar a variável, utilize <code>var(--nome-da-variavel)</code> em qualquer propriedade CSS.</li>
+        <li>Alterando o valor da variável, todos os elementos que a utilizam são atualizados automaticamente.</li>
+    </ol>
+</body>
+</html>
