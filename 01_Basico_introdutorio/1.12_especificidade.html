@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Especificidade CSS</title>
+    <!-- Ligando o CSS externo -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!--
+        ESPECIFICIDADE EM CSS
+        ---------------------
+        Especificidade é o mecanismo que o navegador utiliza para decidir quais regras de CSS serão aplicadas a um elemento quando há conflitos.
+        Cada seletor possui um peso diferente:
+        - Seletores de elemento (ex: h1, p) têm menor especificidade.
+        - Seletores de classe (.classe), atributo ([type="text"]) e pseudo-classes (:hover) têm especificidade intermediária.
+        - Seletores de ID (#id) têm especificidade alta.
+        - Estilos inline (style="...") têm especificidade ainda maior.
+        - A diretiva !important sobrescreve quase tudo, mas deve ser usada com cautela.
+        
+        Exemplo prático:
+        Se um elemento possui múltiplas regras aplicadas, a regra com maior especificidade será aplicada.
+        Veja os exemplos no código abaixo e no arquivo CSS externo.
+    -->
+    <!-- Exemplo de título com ID, classe e seletor de elemento -->
+    <h1 id="titulo" class="destaque">Especificidade em CSS</h1>
+    <!-- Exemplo de parágrafo com classe -->
+    <p class="destaque">Este parágrafo usa a classe "destaque".</p>
+    <!-- Exemplo de parágrafo sem classe -->
+    <p>Este parágrafo não tem classe.</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Exemplo 1: Herança de cor */
+.exemplo1 {
+    color: blue; /* Os filhos herdam esta cor */
+}
+
+/* Exemplo 2: Propriedade não herdada por padrão */
+.exemplo2 {
+    border: 2px solid red; /* Apenas o div tem borda, o p não herda */
+}
+
+/* Exemplo 3: Forçando a herança com 'inherit' */
+.exemplo3 {
+    border: 2px solid green;
+}
+.exemplo3 .herda-borda {
+    border: inherit; /* O p herda a borda do div pai */
+}
+
+/* Exemplo 4: Herança de fonte */
+.exemplo4 {
+    font-family: 'Courier New', Courier, monospace; /* Os filhos herdam a fonte */
+}
+
+/* Exemplo 5: Propriedade 'inherit' explícita */
+.exemplo5 {
+    color: purple;
+}
+.exemplo5 .herda-cor {
+    color: inherit; /* O span herda a cor do div explicitamente */
+}
+
+/* Exemplo 6: Propriedade 'initial' */
+.exemplo6 {
+    color: orange;
+}
+.exemplo6 .cor-inicial {
+    color: initial; /* O p volta ao valor padrão da cor, não herda do pai */
+} 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança no CSS</title>
+    <link rel="stylesheet" href="1.11_heranca.css">
+</head>
+<body>
+    <!-- Exemplo 1: Herança de cor -->
+    <!-- O elemento pai (div) define a cor, e os elementos filhos (parágrafos) herdam essa cor -->
+    <div class="exemplo1">
+        <p>Este parágrafo herda a cor azul do elemento pai (div).</p>
+        <p>Outro parágrafo que também herda a cor azul.</p>
+    </div>
+
+    <!-- Exemplo 2: Propriedade não herdada por padrão -->
+    <!-- A propriedade 'border' não é herdada pelos filhos -->
+    <div class="exemplo2">
+        <p>Este parágrafo NÃO herda a borda do elemento pai.</p>
+    </div>
+
+    <!-- Exemplo 3: Forçando a herança com 'inherit' -->
+    <!-- Podemos usar 'inherit' para forçar a herança de uma propriedade não herdada por padrão -->
+    <div class="exemplo3">
+        <p class="herda-borda">Este parágrafo herda a borda do elemento pai usando 'inherit'.</p>
+    </div>
+
+    <!-- Exemplo 4: Herança de fonte -->
+    <!-- O elemento pai define a família da fonte, e os filhos herdam -->
+    <section class="exemplo4">
+        <h2>Este título herda a fonte do section</h2>
+        <p>Este texto também herda a fonte do section.</p>
+    </section>
+
+    <!-- Exemplo 5: Propriedade 'inherit' explícita -->
+    <!-- Podemos usar 'inherit' para garantir que um elemento herde uma propriedade do pai -->
+    <div class="exemplo5">
+        <span class="herda-cor">Este span herda a cor roxa explicitamente.</span>
+    </div>
+
+    <!-- Exemplo 6: Propriedade 'initial' -->
+    <!-- Podemos usar 'initial' para redefinir uma propriedade para seu valor padrão -->
+    <div class="exemplo6">
+        <p class="cor-inicial">Este parágrafo NÃO herda a cor laranja, pois foi redefinido para o valor inicial (normalmente preto).</p>
+    </div>
+</body>
+</html>
