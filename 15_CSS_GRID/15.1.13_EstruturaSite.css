@@ -22,7 +22,7 @@ body{
 
 .container{
     width: 100%;
-    max-width: 80vw;
+    max-width: 700px;
     gap: 10px;
     padding: 20px;
     background-color: #ccc;
@@ -52,4 +52,17 @@ footer{
 }
 .ad{
     grid-area: ad;
+}
+
+
+/* Responsividade com o Grid */
+
+@media screen and (max-width:  500px){
+    .container{
+        grid-template-areas: 
+        "header header  menu"
+        "secao1 secao1 secao1"
+        "secao2 secao2 secao2"
+        "footer footer  ad";
+    }
 }
