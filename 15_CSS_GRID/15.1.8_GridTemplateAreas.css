@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 300px;
+}
+
+.item {
+    background: #456;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.header { grid-area: header; background: #bfa; }
+.sidebar { grid-area: sidebar; background: #afc; }
+.main { grid-area: main; background: #acf; }
+.footer { grid-area: footer; background: #ffa; }

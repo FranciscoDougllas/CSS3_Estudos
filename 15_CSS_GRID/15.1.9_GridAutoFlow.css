@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 60px;
+    grid-auto-flow: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.item {
+    background: #456;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 8px;
+}

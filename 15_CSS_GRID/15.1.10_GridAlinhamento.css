@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    justify-items: end;
+    align-items: start;
+}
+
+.item {
+    background: #456;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 8px;
+}
